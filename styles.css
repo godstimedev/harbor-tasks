@@ -156,8 +156,8 @@ ul > .list-items:hover {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
-  top: 80%;
-  transform: translateY(-80%);
+  top: calc(100% - 2rem);
+  transform: translateY(-100%);
   transition: top 0.3s ease-in-out;
 }
 
@@ -174,17 +174,20 @@ ul > .list-items:hover {
   top: 10%;
   right: 10%;
   color: black;
-  display: none;
+  /* display: none; */
+  /* visibility: hidden; */
 }
 .container:hover .content {
-  top: 50%;
-  transform: translateY(-50%);
+  top: 240px;
+  transform: translateY(-120px);
 }
 .container:hover .hover-icon {
   display: block;
+  /* visibility: visible; */
 }
 .container:hover .content-icon {
   display: none;
+  /* visibility: hidden; */
 }
 
 .hover-icon > .icon {
